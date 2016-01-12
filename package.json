@@ -3,7 +3,7 @@
   "description": "Simple and fast html utilities for parsing and escaping",
   "repository": {
     "type": "git",
-    "url": "git://github.com/codeparty/html.git"
+    "url": "git://github.com/derbyjs/html-util.git"
   },
   "version": "0.2.1",
   "main": "./lib/index.js",
@@ -16,5 +16,17 @@
   "engines": {
     "node": ">=0.4.0"
   },
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "bugs": {
+    "url": "https://github.com/derbyjs/html-util/issues"
+  },
+  "homepage": "https://github.com/derbyjs/html-util#readme",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nate Smith",
+  "license": "MIT"
 }
