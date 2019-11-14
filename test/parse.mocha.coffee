@@ -51,7 +51,7 @@ describe 'parse', ->
       ['start', 'input', {type: 'checkbox', disabled: null, 'data-stuff': 'hey'}]
       ['start', 'input', {type: 'submit', value: ''}]
       ['end', 'form']
-      ['start', 'img', {src: '/img/stuff.png', alt: ''}]
+      ['empty', 'img', {src: '/img/stuff.png', alt: ''}]
       ['start', 'p', {}]
       ['text', 'Flowers ']
       ['start', 'p', {}]
@@ -76,6 +76,7 @@ describe 'parse', ->
       text: (text) -> stack.push ['text', text]
       comment: (tag, data) -> stack.push ['comment', data]
       other: (tag, data) -> stack.push ['other', data]
+      emptyTag: (tag, tagName, attrs) -> stack.push ['empty', tagName, attrs]
 
     for item, index in expected
       expect(stack[index]).to.eql item
